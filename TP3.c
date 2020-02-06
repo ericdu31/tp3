@@ -5,22 +5,24 @@
 
 
 int main(){
-    int montagne = 0 ;
-    int grotte = 1;
-    int choixChemin;
+    char montagne [9];
+    char grotte [7];
+    char choixChemin [12] ;
 
 
 printf("choisit ton chemin entre la montagne et la grotte ? \n");
 
-scanf("%d",&choixChemin);
-{
-if ((choixChemin == grotte)==1)
-     { printf("vous arrivez a la grotte  \n");}
+scanf("%s",choixChemin);
 
+if(strcmp( choixChemin, "grotte" ) == 0)  {
+        printf( "tu es dans la grotte  \n" );
 
-if ((choixChemin , montagne)==0)
-    { printf("vous arrivez a la montagne  \n");}
 }
+
+if ( strcmp( choixChemin, "montagne" ) == 0) {
+        printf( "tu es sur la montagne  \n" );
+}
+
 
 return 0;
 }
